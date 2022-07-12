@@ -84,7 +84,7 @@ dream.reset()
 To save the progression of images during training, you simply have to supply the `--save-progress` flag
 
 ```bash
-$ dream "a bowl of apples next to the fireplace" --save-progress --save-every 100
+$ dream "a bag full of genitals screaming the sentence " my dog stepped on a bee" --save-progress --save-every 100
 ```
 
 Due to the class conditioned nature of the GAN, Big Sleep often steers off the manifold into noise. You can use a flag to save the best high scoring image (per CLIP critic) to `{filepath}.best.png` in your folder.
@@ -98,7 +98,7 @@ $ dream "a room with a view of the ocean" --save-best
 If you have enough memory, you can also try using a bigger vision model released by OpenAI for improved generations.
 
 ```bash
-$ dream "storm clouds rolling in over a white barnyard" --larger-model
+$ dream "pink storm clouds rolling in over a white suv" --larger-model
 ```
 
 ## Experimentation
@@ -106,30 +106,8 @@ $ dream "storm clouds rolling in over a white barnyard" --larger-model
 You can set the number of classes that you wish to restrict Big Sleep to use for the Big GAN with the `--max-classes` flag as follows (ex. 15 classes). This may lead to extra stability during training, at the cost of lost expressivity.
 
 ```bash
-$ dream 'a single flower in a withered field' --max-classes 15
+$ dream 'a scarecrow dancing with grannies in a field full of parrots' --max-classes 15
 ```
 
-## Alternatives
 
-<a href="https://github.com/lucidrains/deep-daze">Deep Daze</a> - CLIP and a deep SIREN network
-
-## Citations
-
-```bibtex
-@misc{unpublished2021clip,
-    title  = {CLIP: Connecting Text and Images},
-    author = {Alec Radford, Ilya Sutskever, Jong Wook Kim, Gretchen Krueger, Sandhini Agarwal},
-    year   = {2021}
-}
-```
-
-```bibtex
-@misc{brock2019large,
-    title   = {Large Scale GAN Training for High Fidelity Natural Image Synthesis}, 
-    author  = {Andrew Brock and Jeff Donahue and Karen Simonyan},
-    year    = {2019},
-    eprint  = {1809.11096},
-    archivePrefix = {arXiv},
-    primaryClass = {cs.LG}
-}
 ```
