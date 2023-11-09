@@ -1,3 +1,6 @@
+it was fun till it lasted, never knew the myriad of multimodals and image gen models coming within an year : making this project obsolete
+
+
 ## Install
 
 ```bash
